@@ -8,5 +8,8 @@ def total_new(total, payed_amount):
 
 if payed_amount == total:
     print("Your payment is complete")
+elif payed_amount > total:
+    print("Your payment is more than the total amount")
+    total_new(total, payed_amount)
 else:
     total_new(total, payed_amount)
